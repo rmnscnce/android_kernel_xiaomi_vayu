@@ -112,6 +112,7 @@ obj-$(CONFIG_TOUCHSCREEN_RASPBERRYPI_FW)	+= raspberrypi-ts.o
 obj-$(CONFIG_TOUCHSCREEN_IQS5XX)	+= iqs5xx.o
 obj-$(CONFIG_TOUCHSCREEN_ST)	+= st/
 obj-$(CONFIG_TOUCHSCREEN_FTS)	+= focaltech_touch/
+obj-$(CONFIG_TOUCHSCREEN_COMMON)	+= tp_common.o
 
 # Xiaomi
 obj-$(CONFIG_TOUCHSCREEN_NT36xxx_HOSTDL_SPI) += nt36672c/
