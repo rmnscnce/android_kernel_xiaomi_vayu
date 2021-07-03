@@ -1298,4 +1298,8 @@ config TOUCHSCREEN_RAYDIUM_CHIPSET
 
 source "drivers/input/touchscreen/focaltech_touch/Kconfig"
 
+# Xiaomi
+source "drivers/input/touchscreen/nt36672c/Kconfig"
+source "drivers/input/touchscreen/xiaomi/Kconfig"
+
 endif
