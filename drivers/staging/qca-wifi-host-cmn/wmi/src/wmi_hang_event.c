@@ -40,7 +40,7 @@ static void wmi_log_history(struct notifier_block *block, void *data,
 	uint64_t secs, usecs;
 	struct wmi_event_debug *wmi_evt;
 	struct wmi_unified *wmi_handle;
-	struct wmi_log_buf_t *wmi_log;
+	struct wmi_log_buf_t *wmi_log = NULL;
 	struct wmi_hang_data_fixed_param *cmd;
 	struct wmi_command_debug *wmi_cmd;
 	uint8_t *wmi_buf_ptr;

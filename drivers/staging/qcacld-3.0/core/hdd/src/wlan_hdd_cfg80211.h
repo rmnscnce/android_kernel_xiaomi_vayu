@@ -29,6 +29,7 @@
 #include <wlan_cfg80211.h>
 #include <wlan_cfg80211_tdls.h>
 #include <qca_vendor.h>
+#include <qdf_types.h>
 
 struct hdd_context;
 
@@ -373,7 +374,8 @@ int wlan_hdd_send_avoid_freq_event(struct hdd_context *hdd_ctx,
  * Return: 0 on success or failure reason
  */
 int wlan_hdd_send_hang_reason_event(struct hdd_context *hdd_ctx,
-				    uint32_t reason, uint8_t *data,
+				    enum qdf_hang_reason reason,
+					uint8_t *data,
 				    size_t data_len);
 
 int wlan_hdd_send_avoid_freq_for_dnbs(struct hdd_context *hdd_ctx,
